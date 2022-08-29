@@ -48,12 +48,14 @@ dependencies {
 
 afterEvaluate {
     publishing {
-        release(MavenPublication) {
-            from components.release
+        publications {
+            release(MavenPublication) {
+                from components.release
 
-            groupId = 'com.github.iOSHiepLe'
-            artifactId = 'tixngo-manager-compose'
-            version = '1.0'
+                groupId = 'com.github.iOSHiepLe'
+                artifactId = 'tixngo-manager-compose'
+                version = '2.0'
+            }
         }
     }
 }
