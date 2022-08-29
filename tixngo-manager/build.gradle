@@ -54,7 +54,7 @@ afterEvaluate {
 
                 groupId = 'com.github.iOSHiepLe'
                 artifactId = 'tixngo-manager-compose'
-                version = '5.0'
+                version = '6.0'
             }
         }
     }
