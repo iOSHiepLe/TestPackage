@@ -15,7 +15,7 @@ dependencyResolutionManagement {
     String storageUrl = System.env.FLUTTER_STORAGE_BASE_URL ?: "https://storage.googleapis.com"
     repositories {
         maven {
-            url "/Users/lemh/Desktop/androidSdk/host/outputs/repo"
+            url "$rootDir/androidSdk/host/outputs/repo"
         }
         maven {
             url "$storageUrl/download.flutter.io"
