@@ -5,9 +5,12 @@ plugins {
 }
 
 android {
-    compileSdk 32
+    compileSdk 31
 
     defaultConfig {
+        configurations.all {
+            resolutionStrategy { force 'androidx.work:work-runtime:2.6.0' }
+        }
         minSdk 21
         targetSdk 32
 
@@ -54,7 +57,7 @@ afterEvaluate {
 
                 groupId = 'com.github.iOSHiepLe'
                 artifactId = 'tixngo-manager-compose'
-                version = '6.0'
+                version = '7.0'
             }
         }
     }
